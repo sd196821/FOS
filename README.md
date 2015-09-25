@@ -1,7 +1,7 @@
 #FOS
 
 Forest Operating System(FOS)
-is a robot operating system which is design for UAV's group control.
+is a robot operating system which is designed for UAV's group control.
 
 
 #Document
@@ -22,6 +22,8 @@ is a robot operating system which is design for UAV's group control.
 [系统模型](Document/CN/SystemModel.md)
 
 #Usage
+
+[Radio Datas Tube]
 
 #Contribution
 

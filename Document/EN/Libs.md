@@ -2,19 +2,21 @@
 
 ##Contents
 
-- [1.DJI Onboard SDK](#user-content-1)
+- [DJI Onboard SDK](#user-content-1)
 
-- [2.UART](#user-content-2)
+- [UART/USART](#user-content-2)
 
-- [3.Can Bus](#user-content-3)
+- [Can Bus](#user-content-3)
 
-- [4.DDR3](#user-content-4)
+- [DDR3](#user-content-4)
 
-- [5.OpenCV](#user-content-5)
+- [OpenCV](#user-content-5)
 
-- [6.RISC-V](#user-content-6)
+- [RISC-V](#user-content-6)
 
-- [7.ROS](#user-content-7)
+- [ROS](#user-content-7)
+
+- [Erlang](#user-content-8)
 
 
 ##Introduction
@@ -56,7 +58,7 @@
 	[DJISDK](https://github.com/justwillim/FOS/tree/Development/Lib/DJISDK)
 	Configured by QT.
 
-2. <p id="2"> UART
+2. <p id="2"> UART/USART
 	
 
 	[Source not added yet](Document/EN/Libs.md)
@@ -90,6 +92,10 @@
 
 	DJI is officially supply ROS，in order to build up quickly, some highl level sample may given a ROS demo and replant to FOS latter. 
 
+	[Source not added yet](Document/EN/Libs.md)
+
+8. <P id="8">Erlang
+	
 	[Source not added yet](Document/EN/Libs.md)
 	
 		

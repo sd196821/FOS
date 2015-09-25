@@ -80,12 +80,15 @@ Linker is a specific data stack, which is used to share data between two differe
 #UAV Control Model
 ###Brief
 ###Model
+
 ![](img/UAVControl1.jpg)
 
 As a black box, this Control model seems like:
+
 ![](img/UAVControl2.jpg)
 
 Or in real world it seems like:
+
 ![](img/UAVControl3.jpg)
 
 <p  id="3">
@@ -93,6 +96,7 @@ Or in real world it seems like:
 #Group Control Model
 
 ##Problem Model
+
 ![](img/Group1.jpg)
 
 ##Basic Model
@@ -103,6 +107,22 @@ Or in real world it seems like:
 #Radio communication
 
 ![](img/Group2.jpg)
+
+As a radio data transport device, there're 4 things needs to consider:
+frequency, channel, power and stack.
+
+In this case, we provide a full functional stack, including features below:
+
+- Secret communication
+- Automatic frequency hopping
+- Global broadcast
+- Auto topology construction
+- Signal intensity detection
+- Flexible baud rate
+
+State machine
+
+![](img/Radio1.jpg)
 
 <p  id="5">
 
@@ -115,3 +135,6 @@ Or in real world it seems like:
 <p  id="7">
 
 #Muliti Group
+
+##Problem Model
+![](img/Group3.jpg)
