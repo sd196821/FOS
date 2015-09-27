@@ -86,18 +86,24 @@
 
 	Source:
 
-	[HomePage](http://riscv.org/)
+	[Offical website](http://riscv.org/)
 
 7. <P id="7">ROS
 
 	DJI is officially supply ROS，in order to build up quickly, some highl level sample may given a ROS demo and replant to FOS latter. 
 
-	[Source not added yet](Document/EN/Libs.md)
+	[Offical website](http://www.ros.org/)
 
 8. <P id="8">Erlang
 	
-	[Source not added yet](Document/EN/Libs.md)
+	[Offical website](http://www.erlang.org/)
 	
+	[Learning resource(CN)](http://www.erlang-cn.com/)
+	
+	[For beginner(CN)](http://pan.baidu.com/s/1tcZzO)
+
+	[For beginner(EN)](http://pan.baidu.com/s/1EbLok)
+
 		
  
 		
