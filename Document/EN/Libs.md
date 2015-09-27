@@ -94,8 +94,13 @@
 
 	[Offical website](http://www.ros.org/)
 
-8. <P id="8">Erlang
-	
+8. <P id="8">Erlang	
+
+	Erlang is a programming language used to build massively scalable soft real-time systems with requirements on high availability. Some of its uses are in telecoms, banking, e-commerce, computer telephony and instant messaging. Erlang's runtime system has built-in support for concurrency, distribution and fault tolerance.
+
+	In FOS, we need a programming standard (not really a language， likely), Erlang's some feature will be added in the FOS-Core-library(written by C++).
+
+
 	[Offical website](http://www.erlang.org/)
 	
 	[Learning resource(CN)](http://www.erlang-cn.com/)
