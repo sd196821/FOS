@@ -15,6 +15,6 @@ By using open-source CPU ISA, and consult UCB's project rocket, we build a CPU f
 |----------|----------------------------|--------------------|
 | SPORE    | 8-Bit RISC-V processor  	|not started         |
 | SEED     | 32-Bit RISC-V processor 	|not started         |
-| BEAN     | 64-Bit RISC-V processor 	|prepareing         |
+| BEAN     | 64-Bit RISC-V processor 	|prepareing          |
 | NUT      |128-Bit RISC-V processor 	|not started         |
 | GRANADA  |multi-Core RISC-V processor |not started         |
