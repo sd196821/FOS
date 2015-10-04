@@ -44,9 +44,6 @@ It is contructed form hardware level, to application level.
 ###Network model
 
 ![](img/ComputingNode3.jpg)
-
-###Future
-Maybe we could actrualize a number of full-functional computing nodes group in a FPGA or ASIC by using open-source project [RISC-V](riscv.org)
  
 
 ##Memory Management Unit (MMU)

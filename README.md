@@ -33,5 +33,7 @@ is a robot operating system which is designed for UAV's group control.
 Construct basic agreements.
 
 Define System model.
+
+Build up RISC-V 64Bit core BEAN.
 ##Join us
 [Needs to know](needsToKnow.md)

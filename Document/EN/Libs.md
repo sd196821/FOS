@@ -88,6 +88,12 @@
 
 	[Offical website](http://riscv.org/)
 
+	We build a RISC-V MCU family as the hardware of computing node.
+
+	Source:
+	
+	[BARN](Lib/RISCV/README.md)
+
 7. <P id="7">ROS
 
 	DJI is officially supply ROS，in order to build up quickly, some highl level sample may given a ROS demo and replant to FOS latter. 

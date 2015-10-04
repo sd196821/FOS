@@ -18,8 +18,14 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+`include "BEAN.cfg"
+`define DECODER_CHANNEL_DEPTH 4//4*32=128bit
 module Decoder(
-    );
+					input [XPR_LEN-1:0] Channel [DECODER_CHANNEL_DEPTH-1:0];
+					output reg[CECODER_CHANNEL_DEPTH-1:0] isempty;
+					input drop;
+					output 
+					);
 
 
 endmodule
