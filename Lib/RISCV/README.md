@@ -1,11 +1,12 @@
-#RISC-V CPU CORE IN FOS
-This Document introduced a RISC-V CPU family, whitch is used in FOS project.
+#BARN: RISC-V MCU CORE IN FOS
+This Document introduced a RISC-V MCU family, whitch is used in FOS project.
 
 #Contents
 
-- [Over view](#user-cotent-0)
+- [Overview](#user-cotent-0)
+- [BEAN](#user-cotent-1)
 
-#Over view
+#Overview
 
 <p  id="0">
 
@@ -18,3 +19,13 @@ By using open-source CPU ISA, and consult UCB's project rocket, we build a CPU f
 | BEAN     | 64-Bit RISC-V processor 	|prepareing          |
 | NUT      |128-Bit RISC-V processor 	|not started         |
 | GRANADA  |multi-Core RISC-V processor |not started         |
+
+In RISC-V ISA 8-Bit ISA set is not decided(B Set), although it is effective for data package's encode and decode.
+Core SPORE will still be the last core to actualize. 
+
+#BEAN
+
+<p  id="0">
+
+##Framework
+![](Document/EN/img/Core.jpg)

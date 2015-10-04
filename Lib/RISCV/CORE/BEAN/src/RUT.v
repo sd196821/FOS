@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    23:23:26 10/01/2015 
+// Create Date:    16:18:07 10/04/2015 
 // Design Name: 
-// Module Name:    Decoder 
+// Module Name:    RUT 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -19,24 +19,19 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 `include "BEAN.cfg"
-`define DECODER_CHANNEL_DEPTH 4//4*32=128bit
-module Decoder(
-					input [XPR_LEN-1:0] Channel [DECODER_CHANNEL_DEPTH-1:0],
-					input drop,
-					output rs1,
-					output rs2,
-					output rd,
-					output imm,
-					output fun
-					output unit,
-					
-					output BTB,
-					
-					
-					
-					input clk
-					
-					);
+`define REG_NUMBER 32
+module RUT(
+				input[`REG_NUMBER-1:0] finish,
+				input[`REG_NUMBER-1:0] setusing,
+				output reg[`REG_NUMBER-1:0] using,
+				input clk
+    );
+
+
+always@(posedge clk)
+begin
+	using <= (using &(~finish))|setusing;
+end
 
 
 endmodule

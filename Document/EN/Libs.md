@@ -106,8 +106,7 @@
 
 	In FOS, we need a programming standard (not really a language， likely), Erlang's some feature will be added in the FOS-Core-library(written by C++).
 
-
-	[Offical website](http://www.erlang.org/)
+    [Offical website](http://www.erlang.org/)
 	
 	[Learning resource(CN)](http://www.erlang-cn.com/)
 	
