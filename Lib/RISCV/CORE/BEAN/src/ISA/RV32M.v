@@ -1,0 +1,10 @@
+`ifdef RV32M
+`define OP_OP_MUL						10'b0000001000
+`define OP_OP_MULH					10'b0000001001
+`define OP_OP_MULHSU					10'b0000001010
+`define OP_OP_MULHU					10'b0000001011
+`define OP_OP_DIV						10'b0000001100
+`define OP_OP_DIVU					10'b0000001101
+`define OP_OP_REM						10'b0000001110
+`define OP_OP_REMU					10'b0000001111
+`endif

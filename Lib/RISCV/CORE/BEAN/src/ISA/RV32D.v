@@ -1,0 +1,54 @@
+`ifdef  RV32D
+`define OP_NMSUBD_RNE					5'b01000
+`define OP_NMSUBD_RTZ					5'b01001
+`define OP_NMSUBD_RDN					5'b01010
+`define OP_NMSUBD_RUP					5'b01011
+`define OP_NMSUBD_RMM					5'b01100
+`define OP_NMSUBD_RDF					5'b01111
+
+`define OP_NMADDD_RNE					5'b01000
+`define OP_NMADDD_RTZ					5'b01001
+`define OP_NMADDD_RDN					5'b01010
+`define OP_NMADDD_RUP					5'b01011
+`define OP_NMADDD_RMM					5'b01100
+`define OP_NMADDD_RDF					5'b01111
+
+`define OP_OP_FP_FADDD				10'b0000001111
+`define OP_OP_FP_FSUBD				10'b0000101111
+`define OP_OP_FP_FMULD				10'b0001001111
+`define OP_OP_FP_FDIVD				10'b0001101111
+`define OP_OP_FP_FSQRTD				10'b0101101111
+`define OP_OP_FP_FSGNJD				10'b0010001000
+`define OP_OP_FP_FSGNJND			10'b0010001001
+`define OP_OP_FP_FSGNJXD			10'b0010001010
+`define OP_OP_FP_FMIND				10'b0010101000
+`define OP_OP_FP_FMAXD				10'b0010101001
+`define OP_OP_FP_FCVTSD				10'b0100000111
+`define OP_OP_FP_FCVTDS				10'b0100001111
+`define OP_OP_FP_FEQD				10'b1010001010
+`define OP_OP_FP_FLTD				10'b1010001001
+`define OP_OP_FP_FLED				10'b1010001000
+`define OP_OP_FP_FCLASSD			10'b1110001001
+`define OP_OP_FP_FCVTWD				10'b1100001111
+`define OP_OP_FP_FCVTWUD			10'b1100001111
+`define OP_OP_FP_FCVTDW				10'b1101000111
+`define OP_OP_FP_FCVTDWU			10'b1101000111
+
+`define OP_MSUBD_RNE					5'b01000
+`define OP_MSUBD_RTZ					5'b01001
+`define OP_MSUBD_RDN					5'b01010
+`define OP_MSUBD_RUP					5'b01011
+`define OP_MSUBD_RMM					5'b01100
+`define OP_MSUBD_RDF					5'b01111
+
+`define OP_MADDD_RNE					5'b01000
+`define OP_MADDD_RTZ					5'b01001
+`define OP_MADDD_RDN					5'b01010
+`define OP_MADDD_RUP					5'b01011
+`define OP_MADDD_RMM					5'b01100
+`define OP_MADDD_RDF					5'b01111
+
+`define OP_STORE_FSD					3'b011
+
+`define OP_LOAD_FLD					3'b011
+`endif

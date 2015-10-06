@@ -1,0 +1,10 @@
+`define RV32DD
+`include "RV32D.v"
+`ifdef RV64D 
+`define OP_OP_FP_FCVTLD				10'b1100001111
+`define OP_OP_FP_FCVTLUD			10'b1100001111
+`define OP_OP_FP_FMVXD				10'b1110001000
+`define OP_OP_FP_FCVTDL				10'b1101001111
+`define OP_OP_FP_FCVTDLU			10'b1101001111
+`define OP_OP_FP_FMVDX				10'b1111001000
+`endif
