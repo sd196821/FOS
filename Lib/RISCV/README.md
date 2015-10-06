@@ -25,7 +25,7 @@ Core SPORE will still be the last core to actualize.
 
 #BEAN
 
-<p  id="0">
+<p  id="1">
 
 ##Framework
 ![](Document/EN/img/Core.jpg)

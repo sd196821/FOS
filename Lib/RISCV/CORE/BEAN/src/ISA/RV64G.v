@@ -1,0 +1,12 @@
+`include "registerType.v"
+`include "opcode.v"
+`define RV64I
+`define RV64M
+`define RV64A
+`define RV64F
+`define RV64D
+`include "RV64I.v"
+`include "RV64M.v"
+`include "RV64A.v"
+`include "RV64F.v"
+`include "RV64D.v"
