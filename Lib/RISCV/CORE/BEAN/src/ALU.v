@@ -39,18 +39,14 @@ begin
 		case(op)
 			`ALU_OP_ADD : rd <= rs1 + rs2;
 			`ALU_OP_SLL : rd <= rs1 << shamt;
+			`ALU_OP_SLT : rd <= {`XPR_LEN-1'b0,$signed(rs1) <  $signed(rs2)};
+			`ALU_OP_SLTU: rd <= {`XPR_LEN-1'b0,rs1<rs2};
 			`ALU_OP_XOR : rd <= rs1 ^ rs2;
+			`ALU_OP_SRL : rd <= rs1 >> rs2;
 			`ALU_OP_OR  : rd <= rs1 | rs2;
 			`ALU_OP_AND : rd <= rs1 & rs2;
-			`ALU_OP_SRL : rd <= rs1 >> rs2;
-			`ALU_OP_SEQ : rd <= {`XPR_LEN-1'b0,rs1 == rs2};
-			`ALU_OP_SNE : rd <= {`XPR_LEN-1'b0,rs1 != rs2};
 			`ALU_OP_SUB : rd <= rs1 - rs2;
 			`ALU_OP_SRA : rd <= $signed(rs1) >>> shamt;
-			`ALU_OP_SLT : rd <= {`XPR_LEN-1'b0,$signed(rs1) <  $signed(rs2)};
-			`ALU_OP_SGE : rd <= {`XPR_LEN-1'b0,$signed(rs1) >= $signed(rs2)};
-			`ALU_OP_SLTU: rd <= {`XPR_LEN-1'b0,rs1<rs2};
-			`ALU_OP_SGEU: rd <= {`XPR_LEN-1'b0,rs1>=rs2};
 			default: rd <=0;
 		endcase
 	else

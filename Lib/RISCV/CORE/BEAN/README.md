@@ -25,7 +25,11 @@ RV64G
 ![](https://github.com/justwillim/FOS/blob/Development/Lib/RISCV/Document/EN/img/Core.jpg)
 
 
-
+ALU and MPU actualize subset functions in OP\OPIMM\OP32\OPIMM32.
+MPU actualize the subset M.
+SLU(Store and Load Unit) actualize functions in LOAD\LOAD-FP\STORE\STORE-FP\AMO\M\MISC-MEM. 
+FPU actualize functions in MADD\MSUB\NMSUB\NMADD\OP-FP.
+BTB actualize functions in BRANCH\JALR\JAL\SYSTEM
 
 
 

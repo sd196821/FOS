@@ -5,8 +5,8 @@
 `define RV64A
 `define RV64F
 `define RV64D
-`include "RV64I.v"
-`include "RV64M.v"
-`include "RV64A.v"
-`include "RV64F.v"
-`include "RV64D.v"
+`include "subsets\RV64I.v"
+`include "subsets\RV64M.v"
+`include "subsets\RV64A.v"
+`include "subsets\RV64F.v"
+`include "subsets\RV64D.v"

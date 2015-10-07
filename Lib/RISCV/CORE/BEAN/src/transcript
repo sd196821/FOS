@@ -1,0 +1,82 @@
+# Reading C:/modeltech64_10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {ALU_test.fdo} 
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module ALU_test
+# 
+# Top level modules:
+# 	ALU_test
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module infrastructure
+# 
+# Top level modules:
+# 	infrastructure
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module iodrp_controller
+# 
+# Top level modules:
+# 	iodrp_controller
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module iodrp_mcb_controller
+# 
+# Top level modules:
+# 	iodrp_mcb_controller
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module mcb_raw_wrapper
+# 
+# Top level modules:
+# 	mcb_raw_wrapper
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module mcb_soft_calibration
+# 
+# Top level modules:
+# 	mcb_soft_calibration
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module mcb_soft_calibration_top
+# 
+# Top level modules:
+# 	mcb_soft_calibration_top
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module mcb_ui_top
+# 
+# Top level modules:
+# 	mcb_ui_top
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module memc_wrapper
+# 
+# Top level modules:
+# 	memc_wrapper
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.ALU_test glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading work.ALU_test(fast)
+# Loading work.ALU(fast)
+# Loading work.glbl(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+restart
+# Loading work.ALU_test(fast)
+# Loading work.ALU(fast)
+# Loading work.glbl(fast)
+run -all
+# Break in Module ALU_test at ALU_test.v line 59
+# Causality operation skipped due to absense of debug database file

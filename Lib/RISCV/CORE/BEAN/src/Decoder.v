@@ -33,7 +33,7 @@ module Decoder(
 					output rs2,
 					output rd,
 					output imm,
-					output funct
+					output funct,
 					output unit,
 					
 					output BTB,
@@ -50,19 +50,19 @@ wire [4:0] d_rs1;
 wire [2:0] d_func3;
 wire [4:0] d_rd;
 wire [6:0] d_opcode;
-assign d_opcode = current[6:0]
+assign d_opcode = current[6:0];
 // R-Type
 reg [24:0] rtype;
 // I-Type
 reg [24:0] itype;
 // S-Type
-reg [24:0] stype
+reg [24:0] stype;
 // SB-TYPE
-reg [24:0] sbtype
+reg [24:0] sbtype;
 // U-TYPE
-reg [24:0] utype
+reg [24:0] utype;
 // UJ-TYPE
-reg [24:0] ujtype
+reg [24:0] ujtype;
 
 always@(posedge clk)
 begin

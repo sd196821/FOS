@@ -48,7 +48,7 @@
 
 `define OP_OP_IMM_32				7'b0011011
 `define OP_OP_IMM_32_TYPE			`I_TYPE
-`define OP_OP_32					7'b0111011
+`define OP_OP_32OP_OP_32					7'b0111011
 `define OP_OP_32_TYPE				`R_TYPE
 `define OP_OP_64_IMM				7'b1011011
 `define OP_OP_64					7'b1111011

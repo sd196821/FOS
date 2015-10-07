@@ -19,17 +19,15 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 `include "BEAN.cfg"
-`include "FETCH.cfg"
 module FETCH(
 				input reg [`XPR_LEN-1:0] pc,
 				output reg [`XPR_LEN-1:0] command,
-				input[7:0] channel[CHANNEL_DEPTH-1:0],
-				input clk,
+				input clk
 				);
 
-always @(posedge clk)
-begin
+//always @(posedge clk)
+//begin
 
-end
+//end
 
 endmodule

@@ -3,8 +3,8 @@ This Document introduced a RISC-V MCU family, whitch is used in FOS project.
 
 #Contents
 
-- [Overview](#user-cotent-0)
-- [BEAN](#user-cotent-1)
+- [Overview](#user-content-0)
+- [BEAN](#user-content-1)
 
 #Overview
 
