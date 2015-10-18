@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Oct 07 23:56:02 2015
+# Process ID: 71100
+# Log file: D:/GIT/FOS/Lib/RISCV/CORE/BEAN/src/planAhead_run_1/planAhead.log
+# Journal file: D:/GIT/FOS/Lib/RISCV/CORE/BEAN/src/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/GIT/FOS/Lib/RISCV/CORE/BEAN/src/pa.fromNcd.tcl

@@ -9,6 +9,8 @@
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
 # do {ALU_test.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module ALU
 # 
@@ -65,7 +67,7 @@
 # Top level modules:
 # 	glbl
 # vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.ALU_test glbl 
-# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # 
 # Loading work.ALU_test(fast)
 # Loading work.ALU(fast)
@@ -73,6 +75,7 @@
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
+run
 restart
 # Loading work.ALU_test(fast)
 # Loading work.ALU(fast)
