@@ -196,7 +196,9 @@ This is a typical FOS Data Chain structure.
 
 Now you build up a FOS minimum node and it's upper machine.
 
-finaly connect this FOS Processing nod to M100.
+you can learn more about FOS node structure through [this](https://github.com/justwillim/FOS/blob/Development/Document/EN/SystemModel.md)
+
+Finaly connect this FOS Processing nod to M100.
 
 -**Link M100 and STM32F407**
 
