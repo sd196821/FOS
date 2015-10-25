@@ -55,3 +55,5 @@ Lib/RISCV/CORE/BEAN/src/ipcore_dir/DDR3/example_design/
 Lib/RISCV/CORE/BEAN/src/_xmsgs/
 LOGO.cdr
 *.cdr
+Lib/DJISDK/MDK/Objects
+Lib/MDKLib

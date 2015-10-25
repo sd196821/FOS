@@ -58,6 +58,12 @@ or other programmer to programming the STM32 board.
 
 -7.4V (2S) test battery for BEC with XT60 (optional)
 
+##Before build up
+
+-Configure RF module into 2 pairs, name them {P1-A,P1-B}, {P2-A,P2-B}.
+
+-If you can ensure all your hardware can be operating smoothly, go to step [Data Chain Build Up](#user-content-B0). 
+
 ##Build up steps
 
 ###Power Module
@@ -122,8 +128,6 @@ Pay attention to distinguish between positive and negative pole.
 
 -Link an other CP2102 to PC name it L1.
 
--Configure RF module into 2 pairs, name them {P1-A,P1-B}, {P2-A,P2-B}.
-
 -Link RX and TX in CP2102 L0. 
 
 -Link P1-A TX to RX on CP2102 L1.
@@ -168,6 +172,8 @@ Pay attention to distinguish between positive and negative pole.
 
 -until now all hardware device is operating smoothly.
 
+<p  id="B0">
+
 ###Data Chain Build Up
 
 ![](img/total.jpg)
@@ -196,9 +202,9 @@ This is a typical FOS Data Chain structure.
 
 Now you build up a FOS minimum node and it's upper machine.
 
-you can learn more about FOS node structure through [this](https://github.com/justwillim/FOS/blob/Development/Document/EN/SystemModel.md)
+you can learn more about FOS node structure through [this page](https://github.com/justwillim/FOS/blob/Development/Document/EN/SystemModel.md).
 
-Finaly connect this FOS Processing nod to M100.
+Finaly connect this FOS Processing node to M100.
 
 -**Link M100 and STM32F407**
 
