@@ -426,6 +426,9 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>FOSLib</GroupName>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
@@ -551,6 +554,36 @@
         <targetInfos>
           <targetInfo name="HelloWorld"/>
         </targetInfos>
+      </file>
+      <file attr="config" category="header" name="fRSTL_stm32_F4_EVAL\Source\public_headers\user_config\frstl_config_PN.h" version="1.0">
+        <instance index="0" removed="1">RTE\Functional_Safety\frstl_config_PN.h</instance>
+        <component Cclass="Functional Safety" Cgroup="fRSTL" Csub="STM32F4" Cvendor="YOGITECH" Cversion="1.0" condition="STM32F4_COND"/>
+        <package license="license\license.txt" name="fRSTL_STM32Fx_EVAL" schemaVersion="1.2" supportContact="frstl_support@yogitech.com" url="http://www.yogitech.com/sites/default/files/documents/" vendor="YOGITECH" version="1.0.0"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="fRSTL_stm32_F4_EVAL\Source\public_headers\user_api\frstl_flash_config.h" version="1.0">
+        <instance index="0" removed="1">RTE\Functional_Safety\frstl_flash_config.h</instance>
+        <component Cclass="Functional Safety" Cgroup="fRSTL" Csub="STM32F4" Cvendor="YOGITECH" Cversion="1.0" condition="STM32F4_COND"/>
+        <package license="license\license.txt" name="fRSTL_STM32Fx_EVAL" schemaVersion="1.2" supportContact="frstl_support@yogitech.com" url="http://www.yogitech.com/sites/default/files/documents/" vendor="YOGITECH" version="1.0.0"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="fRSTL_stm32_F4_EVAL\Source\public_headers\user_api\frstl_peripherals_PN.h" version="1.0">
+        <instance index="0" removed="1">RTE\Functional_Safety\frstl_peripherals_PN.h</instance>
+        <component Cclass="Functional Safety" Cgroup="fRSTL" Csub="STM32F4" Cvendor="YOGITECH" Cversion="1.0" condition="STM32F4_COND"/>
+        <package license="license\license.txt" name="fRSTL_STM32Fx_EVAL" schemaVersion="1.2" supportContact="frstl_support@yogitech.com" url="http://www.yogitech.com/sites/default/files/documents/" vendor="YOGITECH" version="1.0.0"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="fRSTL_stm32_F4_EVAL\Source\public_headers\user_api\frstl_user_api.h" version="1.0">
+        <instance index="0" removed="1">RTE\Functional_Safety\frstl_user_api.h</instance>
+        <component Cclass="Functional Safety" Cgroup="fRSTL" Csub="STM32F4" Cvendor="YOGITECH" Cversion="1.0" condition="STM32F4_COND"/>
+        <package license="license\license.txt" name="fRSTL_STM32Fx_EVAL" schemaVersion="1.2" supportContact="frstl_support@yogitech.com" url="http://www.yogitech.com/sites/default/files/documents/" vendor="YOGITECH" version="1.0.0"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="fRSTL_stm32_F4_EVAL\Source\source\frstl_core\public_headers\frstl_user_if.h" version="1.0">
+        <instance index="0" removed="1">RTE\Functional_Safety\frstl_user_if.h</instance>
+        <component Cclass="Functional Safety" Cgroup="fRSTL" Csub="STM32F4" Cvendor="YOGITECH" Cversion="1.0" condition="STM32F4_COND"/>
+        <package license="license\license.txt" name="fRSTL_STM32Fx_EVAL" schemaVersion="1.2" supportContact="frstl_support@yogitech.com" url="http://www.yogitech.com/sites/default/files/documents/" vendor="YOGITECH" version="1.0.0"/>
+        <targetInfos/>
       </file>
     </files>
   </RTE>

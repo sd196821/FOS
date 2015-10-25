@@ -26,7 +26,7 @@ is a robot operating system which is designed for UAV's group control.
 
 #Usage
 
-- [MOC-DJISDK](lib/DJISDK)
+- [MOC-DJISDK](Lib/DJISDK/)
 - [Radio Datas Tube]()
 - [Autonomous Vehicles]()
 

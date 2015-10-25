@@ -108,15 +108,56 @@ Pay attention to distinguish between positive and negative pole.
 
 	-SDO
 
+	-for test，we usually link VCC (5V) as well
+
 -Link STLink to PC
 
 -Power on.
 
+###Software enviroment configuration
+
+####Config your MDK project
+
+-Open MDK 5.14 or later version
+
+![](img/MDK/1.jpg)
+
+-Click the icon to install package.
+
+![](img/MDK/2.jpg)
+
+-install at least this two packages.
+
+-Creat a new project
+
+![](img/MDK/3.jpg)
+
+-Choose IC type, in this case STM32F407ZETx
+
+![](img/MDK/4.jpg)
+
+-enable DSP and CMIS Core
+
+![](img/MDK/5.jpg)
+
+
+![](img/MDK/6.jpg)
+
+-enable necessery Device
+
+![](img/MDK/7.jpg)
+
+-Pack selection can be configured later.
+
+####Enable Hal Device
+
+####Install FOSLib
+
+####Config ST-Link
+
+####Build and Run
+
 -Program the BuildUP.bin to STM32.
-
-###Software Enviroment test
-
--
 
 ###Data Chain test
 
