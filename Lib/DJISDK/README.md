@@ -10,6 +10,8 @@ MOC-DJISDK，is a DJI-onboardSDK for ARM 32-bit Cortex-M4（STM32F4）or higher 
 
 - [Quick Start](#user-content-E1)
 
+	-[Hardware Checklist](#Hardware Checklist)
+
 - [Overview](#user-content-E2) 
 
 - [API](#user-content-E3) 
@@ -30,15 +32,25 @@ We strongly suggest you to read this part, no matter it is your first time or no
 
 -STM32F407 Miniun system.
 
+![](img/Hardware/5.jpg)
+
 -STLink 1 pics.
+
+![](img/Hardware/4.jpg)
 
 -BEC 5V3A or higher.
 
 -CP2102 module 2 pics.
 
+![](img/Hardware/1.jpg)
+
 -UART RF module 4 pics.
 
+![](img/Hardware/2.jpg)
+
 -Appropriate amount of DoPont wire， 3M foamed double-sided hesive tape.
+
+![](img/Hardware/3.jpg)
 
 ##Software Enviroment
 
@@ -126,7 +138,7 @@ Pay attention to distinguish between positive and negative pole.
 
 ![](img/MDK/2.jpg)
 
--install at least this two packages.
+-install at least these two packages.
 
 -Creat a new project
 
@@ -154,6 +166,10 @@ Pay attention to distinguish between positive and negative pole.
 ####Install FOSLib
 
 ####Config ST-Link
+
+####Config QT-Code view enviroment
+
+
 
 ####Build and Run
 
