@@ -211,10 +211,9 @@ Pay attention to distinguish between positive and negative pole.
 
 -**check RF module work correctly or not.**
 
--**Get Serial Port Debugger tool [here](https://github.com/justwillim/FOS/tree/Development/Tools/SerialPortDebugger)**
+-**Get Serial Port Debugger tool [here](https://github.com/justwillim/FOS/tree/Development/Tools/SerialPortDebugger).**
 
-
--**Build and Run it and click button in tap Harddrive Viewer PCloop. **
+- **Build and Run it and click button in tap Harddrive Viewer PCloop. **
 
 ####Data chain test
 
