@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,8 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        fos_spd.cpp
+        fos_spd.cpp \
+    pcloop.cpp
 
-HEADERS  += fos_spd.h
+HEADERS  += fos_spd.h \
+    pcloop.h
 
-FORMS    += fos_spd.ui
+FORMS    += fos_spd.ui \
+    pcloop.ui

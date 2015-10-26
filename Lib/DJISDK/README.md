@@ -10,7 +10,11 @@ MOC-DJISDK，is a DJI-onboardSDK for ARM 32-bit Cortex-M4（STM32F4）or higher 
 
 - [Quick Start](#user-content-E1)
 
-	-[Hardware Checklist](#Hardware Checklist)
+	-[Hardware Checklist](#Huser-content-Q0)
+
+	-[Software Enviroment](#Huser-content-Q1)
+
+	-[Tools](#Huser-content-Q2)
 
 - [Overview](#user-content-E2) 
 
@@ -25,6 +29,8 @@ MOC-DJISDK，is a DJI-onboardSDK for ARM 32-bit Cortex-M4（STM32F4）or higher 
 <p  id="E1">
 
 We strongly suggest you to read this part, no matter it is your first time or not.
+
+<p  id="Q0">
 
 ##Hardware Checklist 
 
@@ -48,9 +54,11 @@ We strongly suggest you to read this part, no matter it is your first time or no
 
 ![](img/Hardware/2.jpg)
 
--Appropriate amount of DoPont wire， 3M foamed double-sided hesive tape.
+-Appropriate amount of DoPont wire， 3M foamed double-sided hesive tape and heat shrink tube.
 
 ![](img/Hardware/3.jpg)
+
+<p  id="Q1">
 
 ##Software Enviroment
 
@@ -64,9 +72,13 @@ If your PC is running in a Unix-like system or a Mac OS, you can install MDK5 wi
 
 or other programmer to programming the STM32 board.
 
+<p  id="Q2">
+
 ##Tools
 
 -Multimeter
+
+-Electric soldering iron
 
 -7.4V (2S) test battery for BEC with XT60 (optional)
 
@@ -74,7 +86,7 @@ or other programmer to programming the STM32 board.
 
 -Configure RF module into 2 pairs, name them {P1-A,P1-B}, {P2-A,P2-B}.
 
--If you can ensure all your hardware can be operating smoothly, go to step [Data Chain Build Up](#user-content-B0). 
+-If you can ensure all your hardwares and softwares can be operating smoothly, go to step [Data Chain Build Up](#user-content-B0). 
 
 ##Build up steps
 
@@ -199,7 +211,9 @@ Pay attention to distinguish between positive and negative pole.
 
 -**check RF module work correctly or not.**
 
--**Build and Run PCloop. **
+-**Get Serial Port Debugger tool [here](https://github.com/justwillim/FOS/tree/Development/Tools/SerialPortDebugger)**
+
+-**Build and Run it and click button in tap Harddrive Viewer PCloop. **
 
 ####Data chain test
 
