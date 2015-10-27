@@ -10,11 +10,11 @@ MOC-DJISDK，is a DJI-onboardSDK for ARM 32-bit Cortex-M4（STM32F4）or higher 
 
 - [Quick Start](#user-content-E1)
 
-	-[Hardware Checklist](#Huser-content-Q0)
+	-[Hardware Checklist](#user-content-Q0)
 
-	-[Software Enviroment](#Huser-content-Q1)
+	-[Software Enviroment](#user-content-Q1)
 
-	-[Tools](#Huser-content-Q2)
+	-[Tools](#user-content-Q2)
 
 - [Overview](#user-content-E2) 
 
@@ -90,7 +90,17 @@ or other programmer to programming the STM32 board.
 
 ##Build up steps
 
-###Power Module
+###Assemble M100
+
+***At least 120 min, less than 360min***
+
+[Offical Installation Demnostration](https://developer.dji.com/en/matrice-100/videos/)
+
+---
+
+###Power Module 
+
+***At least 15 min, less than 30 min***
 
 -Soldering XT60 （given by M100 fittings） to BEC's input. 
 
@@ -112,7 +122,11 @@ Pay attention to distinguish between positive and negative pole.
 
 Pay attention to distinguish between positive and negative pole.
 
+---
+
 ###Peripheral system
+
+***At least 15 min, less than 30 min***
 
 -Link BEC and STM32 board (or it is already soldered).
 
@@ -138,9 +152,13 @@ Pay attention to distinguish between positive and negative pole.
 
 -Power on.
 
+---
+
 ###Software enviroment configuration
 
 ####Config your MDK project
+
+***At least 20 min, less than 40 min***
 
 -Open MDK 5.14 or later version
 
@@ -151,6 +169,8 @@ Pay attention to distinguish between positive and negative pole.
 ![](img/MDK/2.jpg)
 
 -install at least these two packages.
+
+If download packages cost too much time, you can download it through P2P tool, using the address at bottom. 
 
 -Creat a new project
 
@@ -215,7 +235,8 @@ Pay attention to distinguish between positive and negative pole.
 
 -**Build and Run it.**
 
--**click button in tap Harddrive Viewer PCloop. **
+-**click button in tap Harddrive Viewer PCloop.**
+
 
 ####Data chain test
 
@@ -237,7 +258,7 @@ Pay attention to distinguish between positive and negative pole.
 
 -Program the BuildUP.bin to STM32.
 
--Build and Run DataChainTest.
+-Build and Run Data Chain Test.
 
 -Power on STM32.
 
@@ -298,6 +319,12 @@ Finaly connect this FOS Processing node to M100.
 <p  id="E3">
 
 #FAQ
+
+1. Why my MDK occur L6047U error?
+	
+	MDK Free license has a limitation of Linker's operating size, get a profesional license to solve this issue.
+
+2. 
 
 <p  id="E4">
 
