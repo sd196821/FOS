@@ -160,9 +160,9 @@ Pay attention to distinguish between positive and negative pole.
 
 ***At least 20 min, less than 40 min***
 
+<p>
 <font color="#FF0000" size="6">
 Attention! All  Software configuration has been done in sample project. This tutorial is used only when you can not build Sample project correctly.
-</font>
 
 [Jump to next Step](#user-content-EB0)
 
