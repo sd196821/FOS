@@ -44,6 +44,7 @@ private slots:
 private slots:
     void monitor();
     void on_pushButton_2_clicked();
+    void on_pushButton_Refresh_clicked();
 
 private:
     Ui::FOS_SPD *ui;

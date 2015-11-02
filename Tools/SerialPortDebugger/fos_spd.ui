@@ -24,19 +24,19 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Harddrive Viewer</string>
+      <string>Hard drive</string>
      </attribute>
      <widget class="QTextBrowser" name="textBrowser">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>10</y>
+        <y>29</y>
         <width>760</width>
-        <height>300</height>
+        <height>281</height>
        </rect>
       </property>
       <property name="undoRedoEnabled">
@@ -66,7 +66,7 @@
       <property name="geometry">
        <rect>
         <x>680</x>
-        <y>410</y>
+        <y>400</y>
         <width>75</width>
         <height>23</height>
        </rect>
@@ -89,7 +89,7 @@
       <property name="geometry">
        <rect>
         <x>680</x>
-        <y>380</y>
+        <y>370</y>
         <width>75</width>
         <height>23</height>
        </rect>
@@ -102,7 +102,7 @@
       <property name="geometry">
        <rect>
         <x>680</x>
-        <y>440</y>
+        <y>420</y>
         <width>89</width>
         <height>16</height>
        </rect>
@@ -115,7 +115,7 @@
       <property name="geometry">
        <rect>
         <x>680</x>
-        <y>470</y>
+        <y>440</y>
         <width>89</width>
         <height>16</height>
        </rect>
@@ -137,10 +137,33 @@
        <string>115200</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="pushButton_Refresh">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>460</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>Unbuilded</string>
+      <string>Data chain</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>M100 monitor</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>FOS node graph</string>
      </attribute>
     </widget>
    </widget>
@@ -154,6 +177,35 @@
      <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File(F)</string>
+    </property>
+    <addaction name="actionNew_N"/>
+    <addaction name="actionOpen_O"/>
+    <addaction name="actionSave_S"/>
+    <addaction name="actionSave_as"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit_E">
+    <property name="title">
+     <string>Edit(E)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuView_V">
+    <property name="title">
+     <string>View(V)</string>
+    </property>
+    <addaction name="actionHard_drive"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp_H">
+    <property name="title">
+     <string>Help(H)</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuEdit_E"/>
+   <addaction name="menuView_V"/>
+   <addaction name="menuHelp_H"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -164,6 +216,34 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen_O">
+   <property name="text">
+    <string>Open(O)</string>
+   </property>
+  </action>
+  <action name="actionNew_N">
+   <property name="text">
+    <string>New(N)</string>
+   </property>
+  </action>
+  <action name="actionSave_S">
+   <property name="text">
+    <string>Save(S)</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionHard_drive">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Hard drive</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

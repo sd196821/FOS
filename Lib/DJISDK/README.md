@@ -160,6 +160,10 @@ Pay attention to distinguish between positive and negative pole.
 
 ***At least 20 min, less than 40 min***
 
+<font color="#FF0000"><font size="6">Attention! All  Software configuration has been done in sample project. This tutorial is used only when you can not build Sample project correctly.</font></font>
+
+[Jump to next Step](#user-content-EB0)
+
 -Open MDK 5.14 or later version
 
 ![](img/MDK/1.jpg)
@@ -202,7 +206,7 @@ If download packages cost too much time, you can download it through P2P tool, u
 ####Config QT-Code view enviroment
 
 
-
+<p  id="EB0">
 ####Build and Run
 
 -Program the BuildUP.bin to STM32.

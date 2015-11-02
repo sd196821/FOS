@@ -10,13 +10,8 @@ FOS_SPD::FOS_SPD(QWidget *parent) :
 {
     currentPort = 0;
     ui->setupUi(this);
-    ports = new Ports();
-    ui->comboBox_PortName->addItem("Selet your port");
-    for(int i = 0; i < ports->getAvailablePortNumber(); ++i)
-    {
-        if(ports->getPort(i) != 0)
-            ui->comboBox_PortName->addItem(ports->getPort(i)->portName());
-    }
+    ports = 0;
+    on_pushButton_Refresh_clicked();
 }
 
 FOS_SPD::~FOS_SPD()
@@ -103,4 +98,18 @@ void FOS_SPD::on_pushButton_2_clicked()
     dialog.exec();
     connect(currentPort,SIGNAL(readyRead()),this,SLOT(monitor()));
     qDebug()<<"Quit";
+}
+
+void FOS_SPD::on_pushButton_Refresh_clicked()
+{
+    ui->comboBox_PortName->clear();
+    if(ports != 0)
+        delete ports;
+    ports = new Ports();
+    ui->comboBox_PortName->addItem("Selet your port");
+    for(int i = 0; i < ports->getAvailablePortNumber(); ++i)
+    {
+        if(ports->getPort(i) != 0)
+            ui->comboBox_PortName->addItem(ports->getPort(i)->portName());
+    }
 }
