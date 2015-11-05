@@ -43,7 +43,6 @@ ADC_HandleTypeDef hadc1;
 ADC_HandleTypeDef hadc2;
 ADC_HandleTypeDef hadc3;
 
-CAN_HandleTypeDef hcan1;
 CAN_HandleTypeDef hcan2;
 
 CRC_HandleTypeDef hcrc;
@@ -55,15 +54,13 @@ SPI_HandleTypeDef hspi1;
 SPI_HandleTypeDef hspi2;
 SPI_HandleTypeDef hspi3;
 
-TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
-TIM_HandleTypeDef htim4;
 
 UART_HandleTypeDef huart4;
-USART_HandleTypeDef husart2;
 USART_HandleTypeDef husart3;
 UART_HandleTypeDef huart6;
 
+NAND_HandleTypeDef hnand2;
 osThreadId defaultTaskHandle;
 
 /* USER CODE BEGIN PV */
@@ -77,20 +74,17 @@ static void MX_GPIO_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_ADC2_Init(void);
 static void MX_ADC3_Init(void);
-static void MX_CAN1_Init(void);
 static void MX_CAN2_Init(void);
 static void MX_CRC_Init(void);
+static void MX_FSMC_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_I2C2_Init(void);
 static void MX_SDIO_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_SPI2_Init(void);
 static void MX_SPI3_Init(void);
-static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
-static void MX_TIM4_Init(void);
 static void MX_UART4_Init(void);
-static void MX_USART2_Init(void);
 static void MX_USART3_Init(void);
 static void MX_USART6_UART_Init(void);
 static void MX_USB_OTG_FS_USB_Init(void);
@@ -125,20 +119,17 @@ int main(void)
   MX_ADC1_Init();
   MX_ADC2_Init();
   MX_ADC3_Init();
-  MX_CAN1_Init();
   MX_CAN2_Init();
   MX_CRC_Init();
+  MX_FSMC_Init();
   MX_I2C1_Init();
   MX_I2C2_Init();
   MX_SDIO_Init();
   MX_SPI1_Init();
   MX_SPI2_Init();
   MX_SPI3_Init();
-  MX_TIM1_Init();
   MX_TIM2_Init();
-  MX_TIM4_Init();
   MX_UART4_Init();
-  MX_USART2_Init();
   MX_USART3_Init();
   MX_USART6_UART_Init();
   MX_USB_OTG_FS_USB_Init();
@@ -319,26 +310,6 @@ void MX_ADC3_Init(void)
 
 }
 
-/* CAN1 init function */
-void MX_CAN1_Init(void)
-{
-
-  hcan1.Instance = CAN1;
-  hcan1.Init.Prescaler = 16;
-  hcan1.Init.Mode = CAN_MODE_NORMAL;
-  hcan1.Init.SJW = CAN_SJW_1TQ;
-  hcan1.Init.BS1 = CAN_BS1_1TQ;
-  hcan1.Init.BS2 = CAN_BS2_1TQ;
-  hcan1.Init.TTCM = DISABLE;
-  hcan1.Init.ABOM = DISABLE;
-  hcan1.Init.AWUM = DISABLE;
-  hcan1.Init.NART = DISABLE;
-  hcan1.Init.RFLM = DISABLE;
-  hcan1.Init.TXFP = DISABLE;
-  HAL_CAN_Init(&hcan1);
-
-}
-
 /* CAN2 init function */
 void MX_CAN2_Init(void)
 {
@@ -467,58 +438,6 @@ void MX_SPI3_Init(void)
 
 }
 
-/* TIM1 init function */
-void MX_TIM1_Init(void)
-{
-
-  TIM_ClockConfigTypeDef sClockSourceConfig;
-  TIM_MasterConfigTypeDef sMasterConfig;
-  TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig;
-  TIM_OC_InitTypeDef sConfigOC;
-
-  htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 0;
-  htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 0;
-  htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim1.Init.RepetitionCounter = 0;
-  HAL_TIM_Base_Init(&htim1);
-
-  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
-  HAL_TIM_ConfigClockSource(&htim1, &sClockSourceConfig);
-
-  HAL_TIM_PWM_Init(&htim1);
-
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig);
-
-  sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
-  sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
-  sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
-  sBreakDeadTimeConfig.DeadTime = 0;
-  sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
-  sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
-  sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
-  HAL_TIMEx_ConfigBreakDeadTime(&htim1, &sBreakDeadTimeConfig);
-
-  sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 0;
-  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-  sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
-  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-  sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
-  sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
-  HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1);
-
-  HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_2);
-
-  HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_3);
-
-  HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_4);
-
-}
-
 /* TIM2 init function */
 void MX_TIM2_Init(void)
 {
@@ -555,42 +474,6 @@ void MX_TIM2_Init(void)
 
 }
 
-/* TIM4 init function */
-void MX_TIM4_Init(void)
-{
-
-  TIM_ClockConfigTypeDef sClockSourceConfig;
-  TIM_MasterConfigTypeDef sMasterConfig;
-  TIM_OC_InitTypeDef sConfigOC;
-
-  htim4.Instance = TIM4;
-  htim4.Init.Prescaler = 0;
-  htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim4.Init.Period = 0;
-  htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  HAL_TIM_Base_Init(&htim4);
-
-  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
-  HAL_TIM_ConfigClockSource(&htim4, &sClockSourceConfig);
-
-  HAL_TIM_PWM_Init(&htim4);
-
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  HAL_TIMEx_MasterConfigSynchronization(&htim4, &sMasterConfig);
-
-  sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 0;
-  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-  HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_1);
-
-  HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_2);
-
-  HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_3);
-
-}
-
 /* UART4 init function */
 void MX_UART4_Init(void)
 {
@@ -604,23 +487,6 @@ void MX_UART4_Init(void)
   huart4.Init.HwFlowCtl = UART_HWCONTROL_NONE;
   huart4.Init.OverSampling = UART_OVERSAMPLING_16;
   HAL_UART_Init(&huart4);
-
-}
-
-/* USART2 init function */
-void MX_USART2_Init(void)
-{
-
-  husart2.Instance = USART2;
-  husart2.Init.BaudRate = 115200;
-  husart2.Init.WordLength = USART_WORDLENGTH_8B;
-  husart2.Init.StopBits = USART_STOPBITS_1;
-  husart2.Init.Parity = USART_PARITY_NONE;
-  husart2.Init.Mode = USART_MODE_TX_RX;
-  husart2.Init.CLKPolarity = USART_POLARITY_LOW;
-  husart2.Init.CLKPhase = USART_PHASE_1EDGE;
-  husart2.Init.CLKLastBit = USART_LASTBIT_DISABLE;
-  HAL_USART_Init(&husart2);
 
 }
 
@@ -731,6 +597,39 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
   GPIO_InitStruct.Alternate = GPIO_AF12_SDIO;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+}
+
+/* FSMC initialization function */
+void MX_FSMC_Init(void)
+{
+  FSMC_NAND_PCC_TimingTypeDef ComSpaceTiming;
+  FSMC_NAND_PCC_TimingTypeDef AttSpaceTiming;
+
+  /** Perform the NAND2 memory initialization sequence
+  */
+  hnand2.Instance = FSMC_NAND_DEVICE;
+  /* hnand2.Init */
+  hnand2.Init.NandBank = FSMC_NAND_BANK2;
+  hnand2.Init.Waitfeature = FSMC_NAND_PCC_WAIT_FEATURE_ENABLE;
+  hnand2.Init.MemoryDataWidth = FSMC_NAND_PCC_MEM_BUS_WIDTH_8;
+  hnand2.Init.EccComputation = FSMC_NAND_ECC_DISABLE;
+  hnand2.Init.ECCPageSize = FSMC_NAND_ECC_PAGE_SIZE_256BYTE;
+  hnand2.Init.TCLRSetupTime = 0;
+  hnand2.Init.TARSetupTime = 0;
+  /* hnand2.Info */
+  /* ComSpaceTiming */
+  ComSpaceTiming.SetupTime = 252;
+  ComSpaceTiming.WaitSetupTime = 252;
+  ComSpaceTiming.HoldSetupTime = 252;
+  ComSpaceTiming.HiZSetupTime = 252;
+  /* AttSpaceTiming */
+  AttSpaceTiming.SetupTime = 252;
+  AttSpaceTiming.WaitSetupTime = 252;
+  AttSpaceTiming.HoldSetupTime = 252;
+  AttSpaceTiming.HiZSetupTime = 252;
+
+  HAL_NAND_Init(&hnand2, &ComSpaceTiming, &AttSpaceTiming);
 
 }
 
